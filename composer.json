@@ -1,0 +1,21 @@
+{
+  "name": "antkwok/fpshk-qrcontent",
+  "description": "Hong Kong FPS QrCode content",
+  "keywords": ["FPS", "qr", "qrcode", "content", "HK"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Anthony Kwok",
+      "email": "anthonykwok83@gmail.com",
+      "homepage": "https://github.com/antkwok"
+    }
+  ],
+  "require": {
+    "php": "^7.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "AntKwok\\FPSHKQrContent\\": "src/"
+    }
+  }
+}
