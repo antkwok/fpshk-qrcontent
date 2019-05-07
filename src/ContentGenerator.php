@@ -124,7 +124,9 @@ class ContentGenerator
         $string .= $this->getMerchantInformation();
         $string .= $this->getMerchantCategoryCode();
         $string .= $this->getTransactionCurrency();
-        $string .= $this->getTransactionAmount();
+        if (!empty($this->amount)) { // dynamic payment
+            $string .= $this->getTransactionAmount();
+        }
         $string .= $this->getCountryCode();
         $string .= $this->getMerchantName();
         $string .= $this->getMerchantCity();
