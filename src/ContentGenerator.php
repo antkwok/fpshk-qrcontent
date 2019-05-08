@@ -113,6 +113,7 @@ class ContentGenerator
         $crc = $this->hash($content . self::CRC_ID . "04");
         $crc = base_convert($crc, 10, 16);
         $crc = strtoupper($crc);
+        $crc = substr("0000" . $crc, -4);
         return self::CRC_ID . $this->addLenInUsePrefixForValue($crc);
     }
 
