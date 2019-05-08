@@ -17,5 +17,10 @@
     "psr-4": {
       "AntKwok\\FPSHKQrContent\\": "src/"
     }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "AntKwok\\FPSHKQrContent\\Tests\\": "tests/"
+    }
   }
 }
